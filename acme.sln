@@ -3,15 +3,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{1510BF3D-6267-4221-8880-0B1CDBBD78E7}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5E2C51E-51EF-4B2E-8E72-73396F4618A2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.api", "backend\acme.ecomm.api\acme.ecomm.api.csproj", "{B23BB9E3-B61C-4863-A83C-EA06C50584B6}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{2F348A2E-E83A-4F27-885C-680938E007A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.api.tests", "backend\acme.ecomm.api.tests\acme.ecomm.api.tests.csproj", "{EF6DCC75-7A47-4094-AC3B-60DFE2453775}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.domain", "src\backend\acme.ecomm.domain\acme.ecomm.domain.csproj", "{8DA376E1-9B89-4537-B83D-9AF095C58983}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.domain", "backend\acme.ecomm.domain\acme.ecomm.domain.csproj", "{50376BDC-1C08-46F6-BD6F-C757DD8821B1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.api", "src\backend\acme.ecomm.api\acme.ecomm.api.csproj", "{84D78AA7-2CE1-4EAD-BCED-117B42B08D55}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.domain.tests", "backend\acme.ecomm.domain.tests\acme.ecomm.domain.tests.csproj", "{30DA14D6-3BD5-434D-877A-DA6C0E6CDF26}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{627F947C-467F-4C28-8C08-28B3815B99CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{9EE8CB06-7A68-4F53-9FA8-5FFC9A99F70E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.domain.tests", "tests\backend\acme.ecomm.domain.tests\acme.ecomm.domain.tests.csproj", "{5C97D59E-2E33-45D5-A552-E09522A7D3AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "acme.ecomm.api.tests", "tests\backend\acme.ecomm.api.tests\acme.ecomm.api.tests.csproj", "{C312F555-7A42-4D3D-A3C6-D5C839D81BD9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,27 +28,29 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B23BB9E3-B61C-4863-A83C-EA06C50584B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B23BB9E3-B61C-4863-A83C-EA06C50584B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B23BB9E3-B61C-4863-A83C-EA06C50584B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B23BB9E3-B61C-4863-A83C-EA06C50584B6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EF6DCC75-7A47-4094-AC3B-60DFE2453775}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EF6DCC75-7A47-4094-AC3B-60DFE2453775}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EF6DCC75-7A47-4094-AC3B-60DFE2453775}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EF6DCC75-7A47-4094-AC3B-60DFE2453775}.Release|Any CPU.Build.0 = Release|Any CPU
-		{50376BDC-1C08-46F6-BD6F-C757DD8821B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{50376BDC-1C08-46F6-BD6F-C757DD8821B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{50376BDC-1C08-46F6-BD6F-C757DD8821B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{50376BDC-1C08-46F6-BD6F-C757DD8821B1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{30DA14D6-3BD5-434D-877A-DA6C0E6CDF26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{30DA14D6-3BD5-434D-877A-DA6C0E6CDF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{30DA14D6-3BD5-434D-877A-DA6C0E6CDF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{30DA14D6-3BD5-434D-877A-DA6C0E6CDF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DA376E1-9B89-4537-B83D-9AF095C58983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DA376E1-9B89-4537-B83D-9AF095C58983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DA376E1-9B89-4537-B83D-9AF095C58983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DA376E1-9B89-4537-B83D-9AF095C58983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84D78AA7-2CE1-4EAD-BCED-117B42B08D55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84D78AA7-2CE1-4EAD-BCED-117B42B08D55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84D78AA7-2CE1-4EAD-BCED-117B42B08D55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84D78AA7-2CE1-4EAD-BCED-117B42B08D55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C97D59E-2E33-45D5-A552-E09522A7D3AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C97D59E-2E33-45D5-A552-E09522A7D3AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C97D59E-2E33-45D5-A552-E09522A7D3AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C97D59E-2E33-45D5-A552-E09522A7D3AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C312F555-7A42-4D3D-A3C6-D5C839D81BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C312F555-7A42-4D3D-A3C6-D5C839D81BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C312F555-7A42-4D3D-A3C6-D5C839D81BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C312F555-7A42-4D3D-A3C6-D5C839D81BD9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{B23BB9E3-B61C-4863-A83C-EA06C50584B6} = {1510BF3D-6267-4221-8880-0B1CDBBD78E7}
-		{EF6DCC75-7A47-4094-AC3B-60DFE2453775} = {1510BF3D-6267-4221-8880-0B1CDBBD78E7}
-		{50376BDC-1C08-46F6-BD6F-C757DD8821B1} = {1510BF3D-6267-4221-8880-0B1CDBBD78E7}
-		{30DA14D6-3BD5-434D-877A-DA6C0E6CDF26} = {1510BF3D-6267-4221-8880-0B1CDBBD78E7}
+		{2F348A2E-E83A-4F27-885C-680938E007A7} = {B5E2C51E-51EF-4B2E-8E72-73396F4618A2}
+		{8DA376E1-9B89-4537-B83D-9AF095C58983} = {2F348A2E-E83A-4F27-885C-680938E007A7}
+		{84D78AA7-2CE1-4EAD-BCED-117B42B08D55} = {2F348A2E-E83A-4F27-885C-680938E007A7}
+		{9EE8CB06-7A68-4F53-9FA8-5FFC9A99F70E} = {627F947C-467F-4C28-8C08-28B3815B99CD}
+		{5C97D59E-2E33-45D5-A552-E09522A7D3AF} = {9EE8CB06-7A68-4F53-9FA8-5FFC9A99F70E}
+		{C312F555-7A42-4D3D-A3C6-D5C839D81BD9} = {9EE8CB06-7A68-4F53-9FA8-5FFC9A99F70E}
 	EndGlobalSection
 EndGlobal
