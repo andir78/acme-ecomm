@@ -6,11 +6,7 @@ This repo is a demonstrator purely to acquire some practical experience in:-
 
 The end user (ACME inc.) is completely fictional.
 
-## MVP Requirements
-
-// ...existing code...
-
-# acme-ecomm — MVP Feature List
+## MVP Requirements - Feature List
 
 This file lists the MVP features for the Acme Widgets e‑commerce app. Each feature includes short acceptance criteria, related entities, and primary API endpoints.
 
